@@ -1,4 +1,6 @@
 class ActorsController < ApplicationController
+
+
   def index
     matching_actors = Actor.all
     @list_of_actors = matching_actors.order({ :created_at => :desc })
